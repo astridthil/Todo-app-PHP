@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(39, 39, 39);
+    color: rgb(253, 194, 229);
+}
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    margin: 2rem;
+}
+.nav-logged-in-as {
+    font-size: 20px;
+}
+.welcome {
+    color: white;
+}
+.loggedout-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10rem;
+}
+.todo-logo {
+    width: 70%;
+    font-size: 80px;
+}
+.btn {
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 23px;
+    margin: 5px;
+    background-color: rgb(53, 53, 53);
+}
+.btn:hover {
+    background-color: rgb(63, 63, 63);
+}
+.add-btn {
+    color: white;
+    font-size: 40px;
+    width: 20rem;
+}
+.login-btn {
+    font-size: 30px;
+    width: 6rem;
+    text-align: center;
+}
+.google-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 3rem;
+}
+.register-btn {
+    font-size: 30px;
+    width: 6rem;
+    text-align: center;
+    margin-right: 3rem;
+}
+.logout-btn {
+    color: white;
+    margin-left: 3rem;
+    font-size: 20px;
+}
+.btn-delete {
+    color: white;
+    font-size: 20px;
+    width: 7rem;
+}
+.btn-delete-todos {
+    margin-bottom: 3rem;
+}
+.delete-edit {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(53, 53, 53);
+  }
+  .container:hover input ~ .checkmark {
+    background-color: rgb(63, 63, 63);
+  }
+  .container input:checked ~ .checkmark {
+    background-color: rgb(63, 63, 63);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(255, 231, 245);
+}
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.all-todos-title {
+    font-size: 60px;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+}
+.add-todo-title {
+    font-size: 60px;
+    margin-bottom: 3rem;
+}
+.input-todo {
+    font-size: 40px;
+    width: 20rem;
+    border: transparent;
+}
+.all-todos {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo {
+    font-size: 40px;
+    width: 30rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.single-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    font-size: 25px;
+}
+.single-todo-title {
+    font-size: 60px;
+}
+.single-todo-date {
+    color: white;
+}
+.edit-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
